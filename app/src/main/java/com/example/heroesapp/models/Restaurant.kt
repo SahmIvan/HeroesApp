@@ -1,5 +1,6 @@
 package com.example.heroesapp.models
 
+//Esta clase es un modelo de datos que reppresenta a una casa de comics
 data class Restaurant(val id: Int,val name:String,val image:String){
     companion object{
         val restaurants = mutableListOf<Restaurant>(

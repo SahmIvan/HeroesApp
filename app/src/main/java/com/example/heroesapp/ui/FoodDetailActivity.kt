@@ -8,6 +8,8 @@ import com.example.heroesapp.R
 import com.example.heroesapp.models.Food
 import com.squareup.picasso.Picasso
 
+// Esta clase se encarga de manejar la vista de la pantalla de un superheroe
+
 class FoodDetailActivity : AppCompatActivity() {
     private lateinit var foodImageView: ImageView
     private lateinit var foodName: TextView

@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var intent:Intent
     private lateinit var foodIntent: Intent
     private lateinit var logoutBtn : Button
+//    Esto se ejecuta cuando se crea la actividad
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -39,7 +40,7 @@ class MainActivity : AppCompatActivity() {
         setUpRecyclerView()
 
         setUpFoodRecyclerView()
-
+//        Configurar el evento click del boton
         logoutBtn.setOnClickListener{
             val editor = sharedPreferences.edit()
             editor.putBoolean("isLogged", false)
@@ -51,7 +52,7 @@ class MainActivity : AppCompatActivity() {
 
 
     }
-
+//    Este metodo se encarga de llenar la lista de restaurantes
     private fun setUpFoodRecyclerView() {
         foodRecyclerView.layoutManager = GridLayoutManager(this, 2)
         val foods = Food.foods.filter { it.rating > 4.5 }
@@ -65,7 +66,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-
+//   Este metodo se encarga de llenar la lista de restaurantes
     private fun setUpRecyclerView() {
         recyclerView.layoutManager = GridLayoutManager(this, 1)
         recyclerView.adapter = RestaurantAdapter(Restaurant.restaurants){restaurant ->

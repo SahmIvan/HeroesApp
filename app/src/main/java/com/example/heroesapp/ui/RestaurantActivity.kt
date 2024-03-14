@@ -12,6 +12,7 @@ import com.example.heroesapp.adapters.FoodAdapter
 import com.example.heroesapp.models.Food
 import com.example.heroesapp.models.Restaurant
 
+// Esta clase se encarga de manejar la vista de la pantalla de una casa de comics
 class RestaurantActivity : AppCompatActivity() {
     private lateinit var restaurantName : TextView
     private lateinit var foodRecyclerView : RecyclerView
@@ -27,7 +28,7 @@ class RestaurantActivity : AppCompatActivity() {
         foodRecyclerView = findViewById(R.id.foods_recyclerview)
         setUpRecyclerView(foods)
     }
-
+//    Este metodo se encarga de llenar la lista de comida
     fun setUpRecyclerView(foods:List<Food>){
         foodRecyclerView.layoutManager = GridLayoutManager(this, 2)
         foodRecyclerView.adapter = FoodAdapter(foods){ food ->

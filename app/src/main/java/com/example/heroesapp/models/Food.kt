@@ -1,5 +1,5 @@
 package com.example.heroesapp.models
-
+//    Esta clase es un modelo de datos que representa un Super Heroe
 data class Food(
     val id: Int,
     val name: String,
