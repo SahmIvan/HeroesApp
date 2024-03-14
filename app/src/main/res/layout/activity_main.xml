@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/guidelineS"
+            app:layout_constraintGuide_percent="0.05"
+
+            />
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/guidelineE"
+            app:layout_constraintGuide_percent="0.95"
+
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/header"
+            app:layout_constraintStart_toEndOf="@id/guidelineS"
+            app:layout_constraintEnd_toStartOf="@id/guidelineE"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/title"
+            app:layout_constraintVertical_bias="0"
+            android:layout_width="0dp"
+            android:gravity="center_vertical"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:contentDescription="@string/user1"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/baseline_account_circle_24"
+                app:tint="@color/DCBlue"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_text"
+                android:textSize="24sp"
+                android:layout_marginStart="8dp"
+                android:textStyle="bold"
+                />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+            <ImageView
+                android:id="@+id/logoutButton"
+                android:contentDescription="@string/user"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_logout_24"
+                app:tint="@color/DCBlue"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/explore_a_los_2_titanes_de_los_comics"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/restaurant_recycler_view"
+            app:layout_constraintEnd_toEndOf="@id/guidelineE"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/guidelineS"
+            app:layout_constraintTop_toBottomOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/restaurant_recycler_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toTopOf="@id/food_title"
+            app:layout_constraintEnd_toStartOf="@id/guidelineE"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@id/guidelineS"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/food_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/los_5_mejores_guerreros_de_cada_casa"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintBottom_toTopOf="@+id/food_recycler_view"
+            app:layout_constraintEnd_toStartOf="@id/guidelineE"
+            app:layout_constraintStart_toEndOf="@id/guidelineS"
+            app:layout_constraintTop_toBottomOf="@id/restaurant_recycler_view"
+
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/food_recycler_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/food_title"
+            app:layout_constraintStart_toEndOf="@id/guidelineS"
+            app:layout_constraintEnd_toStartOf="@id/guidelineE"
+            app:layout_constraintBottom_toBottomOf="@+id/logoutBtn"
+            app:flow_horizontalBias="1"
+            android:layout_marginTop="10dp"
+
+            />
+
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cerrar_sesion"
+            app:layout_constraintTop_toBottomOf="@+id/food_recycler_view"
+            app:layout_constraintStart_toEndOf="@id/guidelineS"
+            app:layout_constraintEnd_toStartOf="@id/guidelineE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginVertical="10dp"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

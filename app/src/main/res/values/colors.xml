@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- Primary Color (Main Theme) -->
+    <color name="DCBlue">#0476F2</color> <!-- Vibrant and Appetite-Stimulating -->
+    <color name="background">#F4F4F4</color>
+</resources>

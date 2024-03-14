@@ -1,0 +1,23 @@
+<resources>
+    <string name="correo_electronico">Correo electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="iniciar_sesion">Iniciar sesion</string>
+    <string name="app_name">HeroesApp</string>
+    <string name="burger">Hamburguesa doble con queso</string>
+    <string name="description">Descripcion</string>
+    <string name="burger_description">Hamburguesa doble con queso, lechuga, tomate, cebolla, pepinillos, queso cheddar y salsa especial</string>
+    <string name="Add">Comprar</string>
+    <string name="Price">$200.00</string>
+    <string name="success_order">Compra exitosa</string>
+    <string name="sucess_order_text">Tu hamburguesa doble con queso ha sido comprada correctamente</string>
+    <string name="rating">4,5</string>
+    <string name="welcome_text">Welcome DChad</string>
+    <string name="cerrar_sesion">Cerrar sesion</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="los_5_mejores_guerreros_de_cada_casa">Los 5 mejores guerreros de cada casa</string>
+    <string name="explore_a_los_2_titanes_de_los_comics">Explore a los 2 titanes de los comics</string>
+    <string name="user">User</string>
+    <string name="user1">User</string>
+    <string name="nombre_del_producto">Nombre del Producto</string>
+    <string name="burger_king">Burger King</string>
+</resources>
